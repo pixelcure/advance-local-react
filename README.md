@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Advance Local Code Assignment
+
+View in browser:
+[http://www.paulthibedeau.com/advance-local/react](http://www.paulthibedeau.com/advance-local/react)
+
+## **Technologies**
+
+* React 16
+* Typescript 3.5
+* Styled Components 4.3
+
+## **How to run the project:**
+___
 ## Available Scripts
 
 In the project directory, you can run:
@@ -12,11 +25,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -24,21 +32,20 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+___
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Some thoughts, and should haves if i had more time to spend:**
+___
 
-### `npm run eject`
+* The project was fun and a good exercise covering a lot of areas. I had seen these APIs used in the past, and even some sent in for code projects for Purplebricks (prior company), but this was a first in using them.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* While working on this, I kept thinking about what real world apps leverage this data. It is so thorough and you could make something really amazing with all of the information it provides.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* I wish I could have broken the JSX into more components. For the most part this was all carried over from the vanilla project and converted to React. Given the time frame I had to make decisions in terms of how to organize components based on functionality, and what could be reused.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Generally, I would define more TS interfaces, and they would be exported and/or in a module and using it as needed. An example would be defining an interface on the responses coming back from the Pokemon and Star Wars API.
+    * Furthermore, I find TS really works well with React given the nature of reusability and passing props down to components. Those props create a model which in turn can be protected by an interface. This is really helpful in scalability, global state, and even just working on a dev team. It safe guards components' props, Redux reducers, as well as adding a better developer experience with things like intellisensse and immediate warnings within your IDE when passing incorrect types.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* I wish I had time to have better error handling. I had invested close to the full amount of hours in the project between the vanilla and this. I sadly don't have any fun error state like the gifs in the vanilla approach. In this project, I am only catching the error and console logging it, with it failing silently. This would not be a good use case for a real world approach
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Some components could have had unit tests, for example the `<Content />` component
