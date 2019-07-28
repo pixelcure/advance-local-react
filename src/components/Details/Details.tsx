@@ -46,16 +46,20 @@ const DetailsStyles = styled.div`
     }
 
     .item-list {
+        margin-top: 1.5rem;
         padding-left: 2rem;
 
         li {
             margin-bottom: 1rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
     @media (min-width: 768px) {
         .item-list {
-            margin-top: 1.5rem;
 
             li {
                 font-size: 1.6rem;
