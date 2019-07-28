@@ -11,6 +11,12 @@ View in browser:<br/>
 * Typescript 3.5
 * Styled Components 4.3
 
+### **Supported Browsers:** _(latest version)_
+* Chrome
+* Edge
+* Firefox
+* Safari
+
 ## **How to run the project:**
 ___
 ## Available Scripts
