@@ -1,12 +1,14 @@
-import { starwarsBaseUrl, pokemonApiBaseUrl } from '../helpers/apiConfigs';
+const pokemonApiBaseUrl = `https://pokeapi.co/api/v2`;
+const starwarsBaseUrl = `https://swapi.co/api`;
 
 class ApiService {
 
     fetchData(url: string): Promise<any> {
-        return fetch(url).then(res => res.json()).catch(error => {
-            console.log(`Error: ${error}`);
-            return error;
-        });
+        return fetch(url).then(res => res.json())
+                .catch(error => {
+                    console.log(`Error: ${error}`);
+                    return error;
+                });
     }
 
     fetchStarwars(limit = 8): Promise<any> {

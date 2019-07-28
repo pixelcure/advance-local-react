@@ -6,7 +6,7 @@ interface IListProps {
     className?: string;
 };
 
-const List = ({ children, className = null}: IListProps): JSX.Element => (
+const List = ({ children, className = null }: IListProps): JSX.Element => (
     <ul className={cs('list-base', className)}>
         {children}
     </ul>

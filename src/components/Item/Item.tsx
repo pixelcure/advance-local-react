@@ -19,7 +19,7 @@ const ItemStyles = styled.li`
     }
 `;
 
-const Item = ({ children, className = null, itemType = null }): JSX.Element => (
+const Item = ({ children, className = null, itemType = null }: IItemProps): JSX.Element => (
     <ItemStyles className={cs(className, 'type', itemType)}>
         {children}
     </ItemStyles>

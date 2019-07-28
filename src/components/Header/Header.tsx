@@ -36,11 +36,11 @@ const Header = (): JSX.Element => (
     <header>
         <Logo>Advance Local Assignment</Logo>
         <Contact
-            rel='noopener noreferrer'
-            href='http://www.paulthibedeau.com'
-            title='paulthibedeau.com'
-            target='_blank'
             className='contact'
+            href='http://www.paulthibedeau.com'
+            rel='noopener noreferrer'
+            target='_blank'
+            title='paulthibedeau.com'
         >
             Created by <span>Paul Thibedeau</span>
         </Contact>
