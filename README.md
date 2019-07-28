@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Advance Local Code Assignment
 
-View in browser:
+View in browser:<br/>
 [http://www.paulthibedeau.com/advance-local/react](http://www.paulthibedeau.com/advance-local/react)
 
 ## **Technologies**
@@ -46,6 +46,6 @@ ___
 * Generally, I would define more TS interfaces, and they would be exported and/or in a module and using it as needed. An example would be defining an interface on the responses coming back from the Pokemon and Star Wars API.
     * Furthermore, I find TS really works well with React given the nature of reusability and passing props down to components. Those props create a model which in turn can be protected by an interface. This is really helpful in scalability, global state, and even just working on a dev team. It safe guards components' props, Redux reducers, as well as adding a better developer experience with things like intellisensse and immediate warnings within your IDE when passing incorrect types.
 
-* I wish I had time to have better error handling. I had invested close to the full amount of hours in the project between the vanilla and this. I sadly don't have any fun error state like the gifs in the vanilla approach. In this project, I am only catching the error and console logging it, with it failing silently. This would not be a good use case for a real world approach
+* I wish I had time to have better error handling. I had invested close to the full amount of hours in the project between the vanilla and this. I sadly don't have any fun error state like the `.gifs` in the vanilla approach. In this project, I am only catching the error and console logging it, with it failing silently. This would not be a good use case for a real world approach
 
 * Some components could have had unit tests, for example the `<Content />` component
