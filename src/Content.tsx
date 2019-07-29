@@ -62,7 +62,7 @@ class Content extends React.Component<{}, IContentState> {
             <Item key={`pokemon-list-${name}`} itemType='pokemon'>
                 <Details
                     detailListLabel='Moves'
-                    image={sprites.front_shiny}
+                    image={sprites && sprites.front_shiny}
                     level={base_experience}
                     type='pokemon'
                     typeLabel='Pokémon'
@@ -90,9 +90,9 @@ class Content extends React.Component<{}, IContentState> {
                     renderMiniList={() => (
                         <List className='capitalize bullets item-list'>
                             <li><strong>Gender:</strong> {gender}</li>
-                            <li><strong>Birth Year:</strong> {birth_year}</li>
-                            <li><strong>Skin Color:</strong> {skin_color}</li>
-                            <li><strong>Hair Color:</strong> {hair_color}</li>
+                            <li><strong>Birth Year:</strong> {birth_year || 'n/a'}</li>
+                            <li><strong>Skin Color:</strong> {skin_color || 'n/a'}</li>
+                            <li><strong>Hair Color:</strong> {hair_color || 'n/a'}</li>
                         </List>
                     )}
                 />
